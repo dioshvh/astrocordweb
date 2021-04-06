@@ -1,0 +1,193 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="AstroCord,astrocord discord,plugins astrocord,better discord,bd plugins,astrocord library,betterdiscordlibrary,nosoyz,@nosoyz,BetterDiscordAddons,BetterDiscordLibrary">
+    <meta name="google-site-verification" content="8yQ95XsIPDcruYineAhan_D8rsZ1lrntC4-gNC1c7q4">
+    <meta name="csrf_token" content="d8dda9190872ff07b6b8553aff0c2dbc">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Plugins - AstroCord">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://betterdiscordlibrary.com/">
+    <meta property="og:image" content="">
+    <meta property="theme-color" content="#3e82e5">
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+    <title>Plugins - AstroCord</title>
+
+    <!-- Scripts -->
+    <script src="assets/js/libraries/axios.js"></script>
+    <script src="assets/js/libraries/cookie.js"></script>
+    <script src="assets/js/libraries/moment.js"></script>
+    <script src="assets/js/libraries/moment-timezone.js"></script>
+    <script src="assets/js/libraries/tagify.js"></script>
+    <script src="assets/js/libraries/lazysizes.js"></script>
+    <script src="assets/js/libraries/highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="assets/js/scripts/giblib.js"></script>
+    <script src="https://kit.fontawesome.com/f75c0b3a5c.js" crossorigin="anonymous"></script>
+    <script defer="" src="assets/js/scripts/index.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/libraries/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/libraries/normalize.css">
+    <link rel="stylesheet" href="assets/css/libraries/balloon.css">
+    <link rel="stylesheet" href="assets/css/libraries/tags.css">
+    <link rel="stylesheet" href="assets/css/libraries/github-markdown.css">
+    <link rel="stylesheet" href="assets/css/themes/night.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="assets/css/themes/light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" id="selected-theme" href="">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+
+  
+    <nav class="nav">
+      <div class="wrapper nav__wrapper">
+        <div class="nav__left">
+          <a href="index.html" class="nav__link">
+            <img src="assets/img/logo.png" alt="BL" class="nav__logo">
+          </a>
+        </div>
+        <div class="nav__mid">
+          <hr class="nav__divider">
+          <a class="nav__link nav__link--active" rel="prefetch" href="temas.html">Temas</a>
+          <hr class="nav__divider">
+          <a class="nav__link" rel="prefetch" href="index.html">Plugins</a>
+          <hr class="nav__divider">
+        </div>
+    </nav>
+
+    <div class="container">
+    
+          <div class="message" style="display: none">
+            <div class="wrapper message__header">
+              <h2 class="message__header-h2">Recomendaciones<time class="message__date">para descargar</time></h2>
+              <button class="message__btn" data-message-id="5">Cerrar<i class="fas fa-times"></i></button>
+            </div>
+            <div class="message__body">
+              <div class="wrapper markdown-body">
+                <p>Descarga de manera segura:</p>
+<ul>
+<li>Limpia tus cookies.</li>
+<li>Usa un navegador privado/modo incognito.</li>
+</ul>
+<p>Si tienes errores de descarga pide soporte en nuestro <a href="https://discord.gg/BQbYt4jUKK">SERVIDOR</a></p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="list wrapper wrapper--content">
+            <header class="list__header">
+              <div class="list__header-text">
+                <h2 class="list__header-h2">Plugins <div class="list__header-count">(BD)</div></h2>
+              </div>
+              <div class="list__header-actions">
+                <div class="search search--mr">
+                  <input class="search__input" type="text" placeholder="Buscar" data-search="plugins">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="dropdown">
+                  <div class="dropdown__btn btn btn--ico-l"><i class="fas fa-tag"></i>Etiquetas<small class="tag-selected">Todas</small></div>
+                  <div class="dropdown__menu dropdown__menu--left">
+                    <label class="checkbox"><input type="radio" class="checkbox__input" name="tag" data-tag-btn="todos" checked=""><div class="checkbox__box"></div>Todos</label>
+                    <label class="checkbox"><input type="radio" class="checkbox__input" name="tag" data-tag-btn="mejores"><div class="checkbox__box"></div>Mejores</label>
+                    <label class="checkbox"><input type="radio" class="checkbox__input" name="tag" data-tag-btn="animados"><div class="checkbox__box"></div>Animados</label>
+                    <label class="checkbox"><input type="radio" class="checkbox__input" name="tag" data-tag-btn="oscuros"><div class="checkbox__box"></div>Oscuros</label>
+                    <label class="checkbox"><input type="radio" class="checkbox__input" name="tag" data-tag-btn="claros"><div class="checkbox__box"></div>Claros</label>
+                    <label class="checkbox"><input type="radio" class="checkbox__input" name="tag" data-tag-btn="espacio"><div class="checkbox__box"></div>Espacio</label>
+                    <label class="checkbox"><input type="radio" class="checkbox__input" name="tag" data-tag-btn="juegos"><div class="checkbox__box"></div>Juegos</label>
+                    <label class="checkbox"><input type="radio" class="checkbox__input" name="tag" data-tag-btn="series"><div class="checkbox__box"></div>Series</label>
+                    <label class="checkbox"><input type="radio" class="checkbox__input" name="tag" data-tag-btn="peliculas"><div class="checkbox__box"></div>Peliculas</label>
+                    <label class="checkbox"><input type="radio" class="checkbox__input" name="tag" data-tag-btn="anime"><div class="checkbox__box"></div>Anime</label>
+                    <label class="checkbox"><input type="radio" class="checkbox__input" name="tag" data-tag-btn="abstracto"><div class="checkbox__box"></div>Abstracto</label>
+                    <label class="checkbox"><input type="radio" class="checkbox__input" name="tag" data-tag-btn="naturaleza"><div class="checkbox__box"></div>Naturaleza</label>
+                  </div>
+                </div>
+              </div>
+            </header>
+
+  <div class="card-container">
+    
+<div class="card" data-filter-plugins="polarso" data-tags="todos series oscuros">
+  <a class="card__real-link" href="temas/PolarSO.html"></a>
+  <div class="card__head">
+    <img class="card__img lazyload" data-src="https://i.imgur.com/lzCGeEe.png" src="assets/img/loading.png">
+    <div class="card__stats">
+      <span class="card__stat card__stat--green" aria-label="Verificado" data-balloon-pos="up-right"><i class="fas fa-check"></i></span></div>
+  </div>
+  <div class="card__info">
+    <h2 class="card__title">Polar SO</h2>
+    <div class="card__authors">
+      <small class="card__by">by</small>
+      <span class="card__author">NoSoyZ</a></span></div>
+    <p class="card__desc">Buen tema para Discord</p>
+  </div>
+  </div>
+
+
+
+  
+</div>
+</div>
+
+    </div>
+    <div class="modals">
+      <div class="modal-overlay"></div>
+      <div class="modal-ajax modal"></div>
+      <div class="modal-search">
+        <div class="search search--large">
+          <input id="global-search" class="search__input" type="text" placeholder="Search...">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="modal-search__results"></div>
+      </div>
+      <div class="modal-theme modal">
+        <header class="modal__header">
+          <h2>Select a theme</h2>
+        </header>
+        <div class="modal-theme__container modal__body">
+          <label class="modal-theme__checkbox dark">
+            <input class="modal-theme__input" type="radio" name="theme" value="dark">
+            <p>Dark</p>
+          </label>
+          <label class="modal-theme__checkbox night">
+            <input class="modal-theme__input" type="radio" name="theme" value="night">
+            <p>Night</p>
+          </label>
+          <label class="modal-theme__checkbox light">
+            <input class="modal-theme__input" type="radio" name="theme" value="light">
+            <p>Light</p>
+          </label>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__wrapper wrapper">
+        <div class="footer__part">
+          <h4 class="footer__header">Servidores <span aria-label="BetterDiscord" data-balloon-pos="up"><i class="fab fa-discord"></i></span></h4>
+          <a class="footer__button" href="https://discord.com/invite/BQbYt4jUKK" target="_blank">AstroCord</a>
+          <a class="footer__button" href="https://discord.com/invite/e6FEtrYN" target="_blank">Z Land</a>
+          <hr class="footer__divider">
+          <small class="footer__small">No damos soporte<br>en Z Land.</small>
+        </div>
+        <div class="footer__part">
+          <h4 class="footer__header">Descarga BD <span aria-label="BetterDiscord" data-balloon-pos="up"><i class="fas fa-question-circle"></i></span></h4>
+          <a class="footer__button" href="https://github.com/bydrar/astrocord-betterdiscord" target="_blank">BetterDiscord</a>
+        </div> 
+        <div class="footer__part">
+          <h4 class="footer__header">Contacto</h4>
+          <a class="footer__button" href="mailto:bydraryt@gmail.com" target="_blank"><i class="fas fa-envelope"></i>bydraryt@gmail.com</a>
+          <a class="footer__button" href="https://twitter.com/nosoyz_" target="_blank"><i class="fab fa-twitter"></i>@nosoyz_</a>
+          <a class="footer__button" href="https://discord.com/invite/BQbYt4jUKK" target="_blank"><i class="fab fa-discord"></i>AstroCord</a>
+        </div>
+        <div class="footer__part footer__part--small">
+          <h4 class="footer__header">Otros</h4>
+          <a class="footer__button" href="https://paypal.me/nosoyz" target="_blank"><i class="fab fa-paypal"></i>Donaciones</a>
+      </div>
+    </footer>
+  </body>
+</html>
